@@ -1,0 +1,138 @@
+:root {
+    --bs-primary-bg-subtle: #eb5d1e08;
+    --bs-primary-rgb: 235, 93, 30;
+    --bs-link-hover-color-rgb: 235, 93, 30 !important;
+    --bs-link-color-rgb: 255, 255, 255 !important;
+    --bs-icon-link-transform: translate(0);
+    --bs-link-color: #7a6960;
+}
+
+.btn-primary {
+    --bs-btn-bg: #eb5d1e !important;
+    --bs-btn-hover-bg: #f18455 !important;
+    border: none !important;
+    transition: all .3s;
+}
+
+.btn-shadow.btn-primary:hover {
+    box-shadow: 0px 8px 15px #f8b091;
+}
+
+.nav-link:hover,.active{
+    color: #eb5d1e !important;
+    filter: brightness();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #7a6960 !important;
+}
+
+@keyframes banner {
+    50% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.card:hover>.card-body>.card-title{
+    color: #eb5d1e !important;
+}
+
+.img-box:hover>.img-p-iv,.img-box:hover>.img-t-iv{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.img-box:hover>.img-box-h{
+    transform: scale(1.1);
+}
+
+.img-box:hover>.img-t-iv{
+    transform: translate(0%) !important;
+}
+
+.cnt-box:hover>.cnt-i{
+    background: #eb5d1e !important;
+    color: #fff !important;
+}
+
+.form-control:focus{
+    border-color: #eb5d1e !important;
+    box-shadow: 0px 0px 0px !important;
+}
+
+.scroll-header{
+    animation: header .5s linear forwards;
+}
+
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.lodder{
+    width: 180px;
+    aspect-ratio: 1/1;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(45deg);
+}
+
+.lodder> span{
+    position: absolute;
+    display: block;
+    border: 15px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: 0px 10px 0px #e0e0e0, inset 0px 10px 0px #e0e0e0;
+    animation: loder 4.5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * -1.5s);
+}
+
+@keyframes loder{
+    0%{
+        transform: translateZ(-100px);
+        width: 100%;
+        height: 100%;
+    }
+    25%{
+        transform: translateZ(100px);
+        width: 100%;
+        height: 100%;
+    }
+    50%{
+        transform: translateZ(100px);
+        width: 35%;
+        height: 35%;
+    }
+    75%{
+        transform: translateZ(-100px);
+        width: 35%;
+        height: 35%;
+    }
+    100%{
+        transform: translateZ(-100px);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+::-webkit-scrollbar{
+    background: #eb5c1e32;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #eb5d1e;
+    border-radius: 50px;
+}
